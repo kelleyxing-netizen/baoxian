@@ -1,0 +1,7 @@
+# 运行产物与缓存
+.tmp/
+__pycache__/
+*.pyc
+
+# 运行时写回的样例数据（如需保留改动请显式 git add）
+# data/tickets.json

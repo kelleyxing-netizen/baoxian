@@ -1,0 +1,77 @@
+{
+  "_comment": "报销单据。subject 为单据所属员工（数据主体），事实核对责任人固定为 R3001 周敏。",
+  "tickets": [
+    {
+      "doc_no": "QH2026090001",
+      "subject": "E1001",
+      "category": "差旅",
+      "amount": 3860.0,
+      "incurred_on": "2026-09-12",
+      "status": "财务复核中",
+      "current_node": "财务复核",
+      "facts_verified": false,
+      "reviewer": "R3001",
+      "policy_ref": "QH-CW-2025-011@V3.0",
+      "materials_submitted": ["TR-01", "TR-02", "TR-03", "TR-04"],
+      "created_at": "2026-09-20",
+      "history": [
+        { "at": "2026-09-20", "node": "提交", "actor": "E1001", "action": "报销单提交" },
+        { "at": "2026-09-22", "node": "部门审核", "actor": "E1002", "action": "部门负责人通过" },
+        { "at": "2026-09-25", "node": "财务复核", "actor": "R3001", "action": "转入财务复核，待核对票据真实性" }
+      ]
+    },
+    {
+      "doc_no": "QH2026080017",
+      "subject": "E1001",
+      "category": "招待",
+      "amount": 1280.0,
+      "incurred_on": "2026-08-14",
+      "status": "已入账",
+      "current_node": "归档",
+      "facts_verified": true,
+      "reviewer": "R3001",
+      "policy_ref": "QH-CW-2025-020@V1.2",
+      "materials_submitted": ["EN-01", "EN-02", "EN-03"],
+      "created_at": "2026-08-18",
+      "history": [
+        { "at": "2026-08-18", "node": "提交", "actor": "E1001", "action": "报销单提交" },
+        { "at": "2026-08-20", "node": "财务复核", "actor": "R3001", "action": "业务事实核对通过" },
+        { "at": "2026-08-22", "node": "出纳付款", "actor": "R3001", "action": "付款完成" }
+      ]
+    },
+    {
+      "doc_no": "QH2026090033",
+      "subject": "E1003",
+      "category": "采购",
+      "amount": 320.0,
+      "incurred_on": "2026-09-08",
+      "status": "部门审核中",
+      "current_node": "部门审核",
+      "facts_verified": false,
+      "reviewer": "R3001",
+      "policy_ref": null,
+      "materials_submitted": ["PR-01", "PR-02", "PR-03"],
+      "created_at": "2026-09-15",
+      "history": [
+        { "at": "2026-09-15", "node": "提交", "actor": "E1003", "action": "报销单提交" }
+      ]
+    },
+    {
+      "doc_no": "QH2026090042",
+      "subject": "E1002",
+      "category": "采购",
+      "amount": 2450.0,
+      "incurred_on": "2026-09-05",
+      "status": "部门审核中",
+      "current_node": "部门审核",
+      "facts_verified": false,
+      "reviewer": "R3001",
+      "policy_ref": null,
+      "materials_submitted": ["PR-01", "PR-02"],
+      "created_at": "2026-09-18",
+      "history": [
+        { "at": "2026-09-18", "node": "提交", "actor": "E1002", "action": "报销单提交" }
+      ]
+    }
+  ]
+}

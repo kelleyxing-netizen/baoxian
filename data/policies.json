@@ -1,0 +1,104 @@
+{
+  "_comment": "制度库。owner 为维护责任人（行政专员）。status: draft|published|repealed。有效性由 status + effective_from/to 共同决定。",
+  "policies": [
+    {
+      "policy_id": "QH-CW-2025-011",
+      "title": "差旅费报销管理办法",
+      "doc_no": "青禾财字〔2025〕011号",
+      "version": "V3.0",
+      "status": "published",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "category": "差旅",
+      "owner": "A2001",
+      "updated_at": "2025-01-05",
+      "supersedes": "QH-CW-2022-007",
+      "summary": "境内出差的交通、住宿标准与报销时限、材料要求。",
+      "material_set": "差旅",
+      "clauses": [
+        { "no": "3.1", "text": "出差前须提交《出差申请单》并取得直属主管批准；未经批准的行程不予报销。", "tags": ["材料", "审批"] },
+        { "no": "3.2", "text": "市内交通凭票据实报销；高铁限二等座，飞机限经济舱。", "tags": ["标准", "交通"] },
+        { "no": "4.1", "text": "住宿费限额：一线城市每晚上限 600 元，其他城市每晚上限 450 元，凭增值税发票报销。", "tags": ["标准", "住宿"] },
+        { "no": "4.2", "text": "伙食补助按出差自然日计，每人每日 100 元，不需票据。", "tags": ["标准", "补助"] },
+        { "no": "5.1", "text": "报销须在出差结束后 30 个自然日内提交，逾期需附情况说明并经部门负责人签批。", "tags": ["时限"] },
+        { "no": "5.2", "text": "票据须与行程单一致；发票真伪与行程真实性由财务核对，智能助手不作结论。", "tags": ["材料", "核对边界"] }
+      ]
+    },
+    {
+      "policy_id": "QH-CW-2022-007",
+      "title": "差旅费报销管理办法",
+      "doc_no": "青禾财字〔2022〕007号",
+      "version": "V2.0",
+      "status": "repealed",
+      "effective_from": "2022-01-01",
+      "effective_to": "2024-12-31",
+      "category": "差旅",
+      "owner": "A2001",
+      "updated_at": "2024-12-20",
+      "supersedes": null,
+      "summary": "已被 V3.0 取代的旧版差旅办法。",
+      "material_set": "差旅",
+      "clauses": [
+        { "no": "4.1", "text": "住宿费限额：一线城市每晚上限 500 元，其他城市每晚上限 400 元。", "tags": ["标准", "住宿"] },
+        { "no": "5.1", "text": "报销须在出差结束后 60 个自然日内提交。", "tags": ["时限"] }
+      ]
+    },
+    {
+      "policy_id": "QH-CW-2025-020",
+      "title": "业务招待费管理细则",
+      "doc_no": "青禾财字〔2025〕020号",
+      "version": "V1.2",
+      "status": "published",
+      "effective_from": "2025-07-01",
+      "effective_to": "2026-12-31",
+      "category": "招待",
+      "owner": "A2001",
+      "updated_at": "2025-06-25",
+      "supersedes": null,
+      "summary": "业务招待的事前审批、标准与材料要求。",
+      "material_set": "招待",
+      "clauses": [
+        { "no": "2.1", "text": "招待须事前提交《招待申请单》并经部门负责人与分管领导批准。", "tags": ["材料", "审批"] },
+        { "no": "3.3", "text": "人均标准不超过 200 元；超标准部分需分管领导书面同意。", "tags": ["标准"] },
+        { "no": "4.2", "text": "报销时须附招待清单，注明时间、地点、事由、陪同人员及人数。", "tags": ["材料"] },
+        { "no": "4.4", "text": "是否存在真实业务背景由财务核对确认。", "tags": ["核对边界"] }
+      ]
+    },
+    {
+      "policy_id": "QH-CW-2026-004",
+      "title": "采购与办公用品报销细则",
+      "doc_no": "青禾财字〔2026〕004号",
+      "version": "V1.0",
+      "status": "draft",
+      "effective_from": "2026-11-01",
+      "effective_to": null,
+      "category": "采购",
+      "owner": "A2001",
+      "updated_at": "2026-09-28",
+      "supersedes": null,
+      "summary": "草稿：尚未发布，任何报销不得引用。",
+      "material_set": "采购",
+      "clauses": [
+        { "no": "3.1", "text": "单笔 2000 元以上采购须附三家比价记录。", "tags": ["材料"] }
+      ]
+    },
+    {
+      "policy_id": "QH-CW-2023-015",
+      "title": "疫情防控期间交通补贴办法",
+      "doc_no": "青禾财字〔2023〕015号",
+      "version": "V1.0",
+      "status": "published",
+      "effective_from": "2023-01-01",
+      "effective_to": "2023-12-31",
+      "category": "交通补贴",
+      "owner": "A2001",
+      "updated_at": "2023-01-10",
+      "supersedes": null,
+      "summary": "已过有效期，不再适用。",
+      "material_set": "交通补贴",
+      "clauses": [
+        { "no": "2.1", "text": "疫情期间自驾通勤按每公里 0.8 元补贴。", "tags": ["标准"] }
+      ]
+    }
+  ]
+}

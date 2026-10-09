@@ -1,0 +1,21 @@
+{
+  "users": [
+    { "user_id": "E1001", "name": "张三", "dept": "市场部", "roles": ["employee"] },
+    { "user_id": "E1002", "name": "李四", "dept": "市场部", "roles": ["employee"] },
+    { "user_id": "E1003", "name": "王五", "dept": "外包服务", "roles": ["contractor"] },
+    { "user_id": "A2001", "name": "李静", "dept": "行政部", "roles": ["admin_specialist"] },
+    { "user_id": "R3001", "name": "周敏", "dept": "财务部", "roles": ["reviewer"] },
+    { "user_id": "SVC-QH", "name": "青禾报销助手", "dept": "系统", "roles": ["agent"] }
+  ],
+  "delegations": [
+    {
+      "grantor": "E1002",
+      "grantee": "E1001",
+      "scopes": ["ticket:read:self"],
+      "granted_at": "2026-09-01",
+      "expires_on": "2026-12-31",
+      "reason": "李四长期外派，授权张三代查其单据进度",
+      "approved_by": "A2001"
+    }
+  ]
+}

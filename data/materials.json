@@ -1,0 +1,43 @@
+{
+  "_comment": "材料清单库。与制度解耦：制度通过 material_set 引用材料集。required=true 为硬性缺项，false 为条件项。",
+  "sets": {
+    "差旅": {
+      "set_id": "差旅",
+      "name": "差旅费报销材料清单",
+      "items": [
+        { "code": "TR-01", "name": "出差申请单（已批准）", "required": true, "condition": null, "note": "需有直属主管批准记录" },
+        { "code": "TR-02", "name": "交通票据（车票/机票/行程单）", "required": true, "condition": null, "note": "票面信息须与行程一致" },
+        { "code": "TR-03", "name": "住宿发票", "required": false, "condition": "发生住宿时提供", "note": "增值税发票，抬头为公司" },
+        { "code": "TR-04", "name": "出差报告", "required": true, "condition": null, "note": "写明出差事由与成果" },
+        { "code": "TR-05", "name": "逾期情况说明", "required": false, "condition": "出差结束后超过 30 个自然日提交时提供", "note": "需部门负责人签批" }
+      ]
+    },
+    "招待": {
+      "set_id": "招待",
+      "name": "业务招待费报销材料清单",
+      "items": [
+        { "code": "EN-01", "name": "招待申请单（已批准）", "required": true, "condition": null, "note": "须事前审批" },
+        { "code": "EN-02", "name": "发票", "required": true, "condition": null, "note": "抬头为公司" },
+        { "code": "EN-03", "name": "招待清单", "required": true, "condition": null, "note": "时间、地点、事由、陪同人员及人数" },
+        { "code": "EN-04", "name": "超标书面同意", "required": false, "condition": "人均超过 200 元时提供", "note": "分管领导书面同意" }
+      ]
+    },
+    "采购": {
+      "set_id": "采购",
+      "name": "采购与办公用品报销材料清单",
+      "items": [
+        { "code": "PR-01", "name": "请购单（已批准）", "required": true, "condition": null, "note": null },
+        { "code": "PR-02", "name": "发票", "required": true, "condition": null, "note": "抬头为公司" },
+        { "code": "PR-03", "name": "验收单", "required": true, "condition": null, "note": "收货人签字" },
+        { "code": "PR-04", "name": "三家比价记录", "required": false, "condition": "单笔 2000 元以上时提供", "note": null }
+      ]
+    },
+    "交通补贴": {
+      "set_id": "交通补贴",
+      "name": "交通补贴材料清单",
+      "items": [
+        { "code": "SP-01", "name": "里程记录", "required": true, "condition": null, "note": null }
+      ]
+    }
+  }
+}
